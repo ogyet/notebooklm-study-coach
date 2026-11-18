@@ -45,8 +45,9 @@ Answers carry citations. An uncited answer is treated as a guess. When the noteb
 | | |
 |---|---|
 | **Topic map** | Splits a subject into small topics, ordered so the basics come first. |
+| **Source finder** | A cheaper model (Sonnet) searches for sources when a topic needs more: originals over summaries, the strongest credible dissent, text NotebookLM can read. Claude checks the list before it goes in your plan. |
 | **Notebook build** | Creates the notebook, adds or copies sources, gives them clean titles, waits until every one is ready. |
-| **Learning loop** | The eight questions, with a pause after the problem so you can attempt it. Answers saved as notes and files. |
+| **Learning loop** | The eight questions, with a pause after the problem so you can attempt it, then as many follow-ups as you want within an agreed budget. Every question asks NotebookLM to quote its passages first and mark what the sources don't support. Answers saved as notes and files. |
 | **Studio pack** | Lite, Standard or Full. Every visual gets one `focus` and only the sources that bear on it. |
 | **Audit** | Flags missing citations, one source drowning out the rest, and facts that go stale (rates, rules, prices). |
 | **Visual check** | Opens every generated visual and judges it against a crowding rubric. It tells you which ones are clean and which aren't. |
