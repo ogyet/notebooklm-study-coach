@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: tidy-mixed-notebook
+expected_outcome: |
+  Reads what is in the Deep Reads notebook, groups its five unrelated books into separate topics, checks whether other notebooks already cover any of them, proposes copying sources into separate topic notebooks while leaving the original untouched, says nothing will be deleted, and asks for approval without changing anything.

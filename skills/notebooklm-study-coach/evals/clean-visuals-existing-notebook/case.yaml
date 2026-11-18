@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: clean-visuals-existing-notebook
+expected_outcome: |
+  Looks at the existing deck and infographic and the prompts behind them, explains that each was asked to cover several topics at once, proposes several single-topic visuals each with its own focus and limited sources, uses the lighter settings, states the cost of a deck and of each infographic, and asks which to make before generating anything.

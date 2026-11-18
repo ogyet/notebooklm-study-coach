@@ -1,0 +1,2209 @@
+{
+ "create": {
+  "min_pos": 1,
+  "max_pos": 1,
+  "options": {
+   "-u": {
+    "name": "--use",
+    "value": false,
+    "choices": null
+   },
+   "--use": {
+    "name": "--use",
+    "value": false,
+    "choices": null
+   },
+   "--json": {
+    "name": "--json",
+    "value": false,
+    "choices": null
+   },
+   "--help": {
+    "name": "--help",
+    "value": false,
+    "choices": null
+   }
+  }
+ },
+ "list": {
+  "min_pos": 0,
+  "max_pos": 0,
+  "options": {
+   "--json": {
+    "name": "--json",
+    "value": false,
+    "choices": null
+   },
+   "--limit": {
+    "name": "--limit",
+    "value": true,
+    "choices": null
+   },
+   "--no-truncate": {
+    "name": "--no-truncate",
+    "value": false,
+    "choices": null
+   },
+   "--help": {
+    "name": "--help",
+    "value": false,
+    "choices": null
+   }
+  }
+ },
+ "ask": {
+  "min_pos": 0,
+  "max_pos": 1,
+  "options": {
+   "--prompt-file": {
+    "name": "--prompt-file",
+    "value": true,
+    "choices": null
+   },
+   "-n": {
+    "name": "--notebook",
+    "value": true,
+    "choices": null
+   },
+   "--notebook": {
+    "name": "--notebook",
+    "value": true,
+    "choices": null
+   },
+   "-c": {
+    "name": "--conversation-id",
+    "value": true,
+    "choices": null
+   },
+   "--conversation-id": {
+    "name": "--conversation-id",
+    "value": true,
+    "choices": null
+   },
+   "--new": {
+    "name": "--new",
+    "value": false,
+    "choices": null
+   },
+   "-y": {
+    "name": "--yes",
+    "value": false,
+    "choices": null
+   },
+   "--yes": {
+    "name": "--yes",
+    "value": false,
+    "choices": null
+   },
+   "-s": {
+    "name": "--source",
+    "value": true,
+    "choices": null
+   },
+   "--source": {
+    "name": "--source",
+    "value": true,
+    "choices": null
+   },
+   "--json": {
+    "name": "--json",
+    "value": false,
+    "choices": null
+   },
+   "--save-as-note": {
+    "name": "--save-as-note",
+    "value": false,
+    "choices": null
+   },
+   "-t": {
+    "name": "--note-title",
+    "value": true,
+    "choices": null
+   },
+   "--note-title": {
+    "name": "--note-title",
+    "value": true,
+    "choices": null
+   },
+   "--request-timeout": {
+    "name": "--request-timeout",
+    "value": true,
+    "choices": null
+   },
+   "--timeout": {
+    "name": "--request-timeout",
+    "value": true,
+    "choices": null
+   },
+   "--help": {
+    "name": "--help",
+    "value": false,
+    "choices": null
+   }
+  }
+ },
+ "configure": {
+  "min_pos": 0,
+  "max_pos": 0,
+  "options": {
+   "-n": {
+    "name": "--notebook",
+    "value": true,
+    "choices": null
+   },
+   "--notebook": {
+    "name": "--notebook",
+    "value": true,
+    "choices": null
+   },
+   "--mode": {
+    "name": "--mode",
+    "value": true,
+    "choices": [
+     "default",
+     "learning-guide",
+     "concise",
+     "detailed"
+    ]
+   },
+   "--persona": {
+    "name": "--persona",
+    "value": true,
+    "choices": null
+   },
+   "--response-length": {
+    "name": "--response-length",
+    "value": true,
+    "choices": [
+     "default",
+     "longer",
+     "shorter"
+    ]
+   },
+   "--json": {
+    "name": "--json",
+    "value": false,
+    "choices": null
+   },
+   "--help": {
+    "name": "--help",
+    "value": false,
+    "choices": null
+   }
+  }
+ },
+ "usage": {
+  "min_pos": 0,
+  "max_pos": 0,
+  "options": {
+   "--categories": {
+    "name": "--categories",
+    "value": false,
+    "choices": null
+   },
+   "--actions": {
+    "name": "--categories",
+    "value": false,
+    "choices": null
+   },
+   "--json": {
+    "name": "--json",
+    "value": false,
+    "choices": null
+   },
+   "--help": {
+    "name": "--help",
+    "value": false,
+    "choices": null
+   }
+  }
+ },
+ "collection list": {
+  "min_pos": 0,
+  "max_pos": 0,
+  "options": {
+   "--json": {
+    "name": "--json",
+    "value": false,
+    "choices": null
+   },
+   "--help": {
+    "name": "--help",
+    "value": false,
+    "choices": null
+   }
+  }
+ },
+ "collection create": {
+  "min_pos": 1,
+  "max_pos": 1,
+  "options": {
+   "--json": {
+    "name": "--json",
+    "value": false,
+    "choices": null
+   },
+   "--help": {
+    "name": "--help",
+    "value": false,
+    "choices": null
+   }
+  }
+ },
+ "collection add": {
+  "min_pos": 2,
+  "max_pos": 99,
+  "options": {
+   "--json": {
+    "name": "--json",
+    "value": false,
+    "choices": null
+   },
+   "--help": {
+    "name": "--help",
+    "value": false,
+    "choices": null
+   }
+  }
+ },
+ "collection notebooks": {
+  "min_pos": 1,
+  "max_pos": 1,
+  "options": {
+   "--json": {
+    "name": "--json",
+    "value": false,
+    "choices": null
+   },
+   "--help": {
+    "name": "--help",
+    "value": false,
+    "choices": null
+   }
+  }
+ },
+ "source add": {
+  "min_pos": 1,
+  "max_pos": 1,
+  "options": {
+   "-n": {
+    "name": "--notebook",
+    "value": true,
+    "choices": null
+   },
+   "--notebook": {
+    "name": "--notebook",
+    "value": true,
+    "choices": null
+   },
+   "--type": {
+    "name": "--type",
+    "value": true,
+    "choices": [
+     "url",
+     "text",
+     "file",
+     "youtube"
+    ]
+   },
+   "--title": {
+    "name": "--title",
+    "value": true,
+    "choices": null
+   },
+   "--mime-type": {
+    "name": "--mime-type",
+    "value": true,
+    "choices": null
+   },
+   "--request-timeout": {
+    "name": "--request-timeout",
+    "value": true,
+    "choices": null
+   },
+   "--timeout": {
+    "name": "--request-timeout",
+    "value": true,
+    "choices": null
+   },
+   "--follow-symlinks": {
+    "name": "--follow-symlinks",
+    "value": false,
+    "choices": null
+   },
+   "--allow-internal": {
+    "name": "--allow-internal",
+    "value": false,
+    "choices": null
+   },
+   "--fallback-fetch": {
+    "name": "--fallback-fetch",
+    "value": false,
+    "choices": null
+   },
+   "--cleanup-on-failure": {
+    "name": "--cleanup-on-failure",
+    "value": false,
+    "choices": null
+   },
+   "--json": {
+    "name": "--json",
+    "value": false,
+    "choices": null
+   },
+   "--help": {
+    "name": "--help",
+    "value": false,
+    "choices": null
+   }
+  }
+ },
+ "source add-drive": {
+  "min_pos": 2,
+  "max_pos": 2,
+  "options": {
+   "-n": {
+    "name": "--notebook",
+    "value": true,
+    "choices": null
+   },
+   "--notebook": {
+    "name": "--notebook",
+    "value": true,
+    "choices": null
+   },
+   "--mime-type": {
+    "name": "--mime-type",
+    "value": true,
+    "choices": [
+     "google-doc",
+     "google-slides",
+     "google-sheets",
+     "pdf"
+    ]
+   },
+   "--json": {
+    "name": "--json",
+    "value": false,
+    "choices": null
+   },
+   "--help": {
+    "name": "--help",
+    "value": false,
+    "choices": null
+   }
+  }
+ },
+ "source copy": {
+  "min_pos": 1,
+  "max_pos": 99,
+  "options": {
+   "--to": {
+    "name": "--to",
+    "value": true,
+    "choices": null
+   },
+   "-n": {
+    "name": "--notebook",
+    "value": true,
+    "choices": null
+   },
+   "--notebook": {
+    "name": "--notebook",
+    "value": true,
+    "choices": null
+   },
+   "--json": {
+    "name": "--json",
+    "value": false,
+    "choices": null
+   },
+   "--help": {
+    "name": "--help",
+    "value": false,
+    "choices": null
+   }
+  }
+ },
+ "source rename": {
+  "min_pos": 2,
+  "max_pos": 2,
+  "options": {
+   "-n": {
+    "name": "--notebook",
+    "value": true,
+    "choices": null
+   },
+   "--notebook": {
+    "name": "--notebook",
+    "value": true,
+    "choices": null
+   },
+   "--json": {
+    "name": "--json",
+    "value": false,
+    "choices": null
+   },
+   "--help": {
+    "name": "--help",
+    "value": false,
+    "choices": null
+   }
+  }
+ },
+ "source list": {
+  "min_pos": 0,
+  "max_pos": 0,
+  "options": {
+   "-n": {
+    "name": "--notebook",
+    "value": true,
+    "choices": null
+   },
+   "--notebook": {
+    "name": "--notebook",
+    "value": true,
+    "choices": null
+   },
+   "--json": {
+    "name": "--json",
+    "value": false,
+    "choices": null
+   },
+   "--label": {
+    "name": "--label",
+    "value": true,
+    "choices": null
+   },
+   "--status": {
+    "name": "--status",
+    "value": true,
+    "choices": [
+     "unknown",
+     "processing",
+     "ready",
+     "error",
+     "preparing"
+    ]
+   },
+   "--limit": {
+    "name": "--limit",
+    "value": true,
+    "choices": null
+   },
+   "--no-truncate": {
+    "name": "--no-truncate",
+    "value": false,
+    "choices": null
+   },
+   "--help": {
+    "name": "--help",
+    "value": false,
+    "choices": null
+   }
+  }
+ },
+ "artifact list": {
+  "min_pos": 0,
+  "max_pos": 0,
+  "options": {
+   "-n": {
+    "name": "--notebook",
+    "value": true,
+    "choices": null
+   },
+   "--notebook": {
+    "name": "--notebook",
+    "value": true,
+    "choices": null
+   },
+   "--type": {
+    "name": "--type",
+    "value": true,
+    "choices": [
+     "all",
+     "audio",
+     "video",
+     "slide-deck",
+     "quiz",
+     "flashcard",
+     "infographic",
+     "data-table",
+     "mind-map",
+     "report",
+     "fantasy-map",
+     "file"
+    ]
+   },
+   "--json": {
+    "name": "--json",
+    "value": false,
+    "choices": null
+   },
+   "--limit": {
+    "name": "--limit",
+    "value": true,
+    "choices": null
+   },
+   "--no-truncate": {
+    "name": "--no-truncate",
+    "value": false,
+    "choices": null
+   },
+   "--help": {
+    "name": "--help",
+    "value": false,
+    "choices": null
+   }
+  }
+ },
+ "artifact get-prompt": {
+  "min_pos": 1,
+  "max_pos": 1,
+  "options": {
+   "-n": {
+    "name": "--notebook",
+    "value": true,
+    "choices": null
+   },
+   "--notebook": {
+    "name": "--notebook",
+    "value": true,
+    "choices": null
+   },
+   "--json": {
+    "name": "--json",
+    "value": false,
+    "choices": null
+   },
+   "--help": {
+    "name": "--help",
+    "value": false,
+    "choices": null
+   }
+  }
+ },
+ "note list": {
+  "min_pos": 0,
+  "max_pos": 0,
+  "options": {
+   "-n": {
+    "name": "--notebook",
+    "value": true,
+    "choices": null
+   },
+   "--notebook": {
+    "name": "--notebook",
+    "value": true,
+    "choices": null
+   },
+   "--json": {
+    "name": "--json",
+    "value": false,
+    "choices": null
+   },
+   "--help": {
+    "name": "--help",
+    "value": false,
+    "choices": null
+   }
+  }
+ },
+ "note create": {
+  "min_pos": 0,
+  "max_pos": 1,
+  "options": {
+   "--content": {
+    "name": "--content",
+    "value": true,
+    "choices": null
+   },
+   "-n": {
+    "name": "--notebook",
+    "value": true,
+    "choices": null
+   },
+   "--notebook": {
+    "name": "--notebook",
+    "value": true,
+    "choices": null
+   },
+   "-t": {
+    "name": "--title",
+    "value": true,
+    "choices": null
+   },
+   "--title": {
+    "name": "--title",
+    "value": true,
+    "choices": null
+   },
+   "--json": {
+    "name": "--json",
+    "value": false,
+    "choices": null
+   },
+   "--help": {
+    "name": "--help",
+    "value": false,
+    "choices": null
+   }
+  }
+ },
+ "note rename": {
+  "min_pos": 2,
+  "max_pos": 2,
+  "options": {
+   "-n": {
+    "name": "--notebook",
+    "value": true,
+    "choices": null
+   },
+   "--notebook": {
+    "name": "--notebook",
+    "value": true,
+    "choices": null
+   },
+   "--json": {
+    "name": "--json",
+    "value": false,
+    "choices": null
+   },
+   "--help": {
+    "name": "--help",
+    "value": false,
+    "choices": null
+   }
+  }
+ },
+ "history": {
+  "min_pos": 0,
+  "max_pos": 0,
+  "options": {
+   "-n": {
+    "name": "--notebook",
+    "value": true,
+    "choices": null
+   },
+   "--notebook": {
+    "name": "--notebook",
+    "value": true,
+    "choices": null
+   },
+   "-l": {
+    "name": "--limit",
+    "value": true,
+    "choices": null
+   },
+   "--limit": {
+    "name": "--limit",
+    "value": true,
+    "choices": null
+   },
+   "--clear": {
+    "name": "--clear",
+    "value": false,
+    "choices": null
+   },
+   "--save": {
+    "name": "--save",
+    "value": false,
+    "choices": null
+   },
+   "-t": {
+    "name": "--note-title",
+    "value": true,
+    "choices": null
+   },
+   "--note-title": {
+    "name": "--note-title",
+    "value": true,
+    "choices": null
+   },
+   "--json": {
+    "name": "--json",
+    "value": false,
+    "choices": null
+   },
+   "--show-all": {
+    "name": "--show-all",
+    "value": false,
+    "choices": null
+   },
+   "--no-truncate": {
+    "name": "--no-truncate",
+    "value": false,
+    "choices": null
+   },
+   "--help": {
+    "name": "--help",
+    "value": false,
+    "choices": null
+   }
+  }
+ },
+ "generate report": {
+  "min_pos": 0,
+  "max_pos": 1,
+  "options": {
+   "--later": {
+    "name": "--later",
+    "value": false,
+    "choices": null
+   },
+   "--prompt-file": {
+    "name": "--prompt-file",
+    "value": true,
+    "choices": null
+   },
+   "--format": {
+    "name": "--format",
+    "value": true,
+    "choices": [
+     "briefing-doc",
+     "study-guide",
+     "blog-post",
+     "custom"
+    ]
+   },
+   "-n": {
+    "name": "--notebook",
+    "value": true,
+    "choices": null
+   },
+   "--notebook": {
+    "name": "--notebook",
+    "value": true,
+    "choices": null
+   },
+   "-s": {
+    "name": "--source",
+    "value": true,
+    "choices": null
+   },
+   "--source": {
+    "name": "--source",
+    "value": true,
+    "choices": null
+   },
+   "--language": {
+    "name": "--language",
+    "value": true,
+    "choices": null
+   },
+   "--append": {
+    "name": "--append",
+    "value": true,
+    "choices": null
+   },
+   "--wait": {
+    "name": "--no-wait",
+    "value": false,
+    "choices": null
+   },
+   "--no-wait": {
+    "name": "--no-wait",
+    "value": false,
+    "choices": null
+   },
+   "--timeout": {
+    "name": "--timeout",
+    "value": true,
+    "choices": null
+   },
+   "--interval": {
+    "name": "--interval",
+    "value": true,
+    "choices": null
+   },
+   "--retry": {
+    "name": "--retry",
+    "value": true,
+    "choices": null
+   },
+   "--json": {
+    "name": "--json",
+    "value": false,
+    "choices": null
+   },
+   "--help": {
+    "name": "--help",
+    "value": false,
+    "choices": null
+   }
+  }
+ },
+ "generate quiz": {
+  "min_pos": 0,
+  "max_pos": 1,
+  "options": {
+   "--later": {
+    "name": "--later",
+    "value": false,
+    "choices": null
+   },
+   "--prompt-file": {
+    "name": "--prompt-file",
+    "value": true,
+    "choices": null
+   },
+   "-n": {
+    "name": "--notebook",
+    "value": true,
+    "choices": null
+   },
+   "--notebook": {
+    "name": "--notebook",
+    "value": true,
+    "choices": null
+   },
+   "--quantity": {
+    "name": "--quantity",
+    "value": true,
+    "choices": [
+     "fewer",
+     "standard",
+     "more"
+    ]
+   },
+   "--difficulty": {
+    "name": "--difficulty",
+    "value": true,
+    "choices": [
+     "easy",
+     "medium",
+     "hard"
+    ]
+   },
+   "-s": {
+    "name": "--source",
+    "value": true,
+    "choices": null
+   },
+   "--source": {
+    "name": "--source",
+    "value": true,
+    "choices": null
+   },
+   "--wait": {
+    "name": "--no-wait",
+    "value": false,
+    "choices": null
+   },
+   "--no-wait": {
+    "name": "--no-wait",
+    "value": false,
+    "choices": null
+   },
+   "--timeout": {
+    "name": "--timeout",
+    "value": true,
+    "choices": null
+   },
+   "--interval": {
+    "name": "--interval",
+    "value": true,
+    "choices": null
+   },
+   "--retry": {
+    "name": "--retry",
+    "value": true,
+    "choices": null
+   },
+   "--json": {
+    "name": "--json",
+    "value": false,
+    "choices": null
+   },
+   "--help": {
+    "name": "--help",
+    "value": false,
+    "choices": null
+   }
+  }
+ },
+ "generate flashcards": {
+  "min_pos": 0,
+  "max_pos": 1,
+  "options": {
+   "--later": {
+    "name": "--later",
+    "value": false,
+    "choices": null
+   },
+   "--prompt-file": {
+    "name": "--prompt-file",
+    "value": true,
+    "choices": null
+   },
+   "-n": {
+    "name": "--notebook",
+    "value": true,
+    "choices": null
+   },
+   "--notebook": {
+    "name": "--notebook",
+    "value": true,
+    "choices": null
+   },
+   "--quantity": {
+    "name": "--quantity",
+    "value": true,
+    "choices": [
+     "fewer",
+     "standard",
+     "more"
+    ]
+   },
+   "--difficulty": {
+    "name": "--difficulty",
+    "value": true,
+    "choices": [
+     "easy",
+     "medium",
+     "hard"
+    ]
+   },
+   "-s": {
+    "name": "--source",
+    "value": true,
+    "choices": null
+   },
+   "--source": {
+    "name": "--source",
+    "value": true,
+    "choices": null
+   },
+   "--wait": {
+    "name": "--no-wait",
+    "value": false,
+    "choices": null
+   },
+   "--no-wait": {
+    "name": "--no-wait",
+    "value": false,
+    "choices": null
+   },
+   "--timeout": {
+    "name": "--timeout",
+    "value": true,
+    "choices": null
+   },
+   "--interval": {
+    "name": "--interval",
+    "value": true,
+    "choices": null
+   },
+   "--retry": {
+    "name": "--retry",
+    "value": true,
+    "choices": null
+   },
+   "--json": {
+    "name": "--json",
+    "value": false,
+    "choices": null
+   },
+   "--help": {
+    "name": "--help",
+    "value": false,
+    "choices": null
+   }
+  }
+ },
+ "generate mind-map": {
+  "min_pos": 0,
+  "max_pos": 0,
+  "options": {
+   "-n": {
+    "name": "--notebook",
+    "value": true,
+    "choices": null
+   },
+   "--notebook": {
+    "name": "--notebook",
+    "value": true,
+    "choices": null
+   },
+   "-s": {
+    "name": "--source",
+    "value": true,
+    "choices": null
+   },
+   "--source": {
+    "name": "--source",
+    "value": true,
+    "choices": null
+   },
+   "--language": {
+    "name": "--language",
+    "value": true,
+    "choices": null
+   },
+   "--instructions": {
+    "name": "--instructions",
+    "value": true,
+    "choices": null
+   },
+   "--kind": {
+    "name": "--kind",
+    "value": true,
+    "choices": [
+     "interactive",
+     "note-backed"
+    ]
+   },
+   "--json": {
+    "name": "--json",
+    "value": false,
+    "choices": null
+   },
+   "--help": {
+    "name": "--help",
+    "value": false,
+    "choices": null
+   }
+  }
+ },
+ "generate data-table": {
+  "min_pos": 0,
+  "max_pos": 1,
+  "options": {
+   "--prompt-file": {
+    "name": "--prompt-file",
+    "value": true,
+    "choices": null
+   },
+   "-n": {
+    "name": "--notebook",
+    "value": true,
+    "choices": null
+   },
+   "--notebook": {
+    "name": "--notebook",
+    "value": true,
+    "choices": null
+   },
+   "--language": {
+    "name": "--language",
+    "value": true,
+    "choices": null
+   },
+   "-s": {
+    "name": "--source",
+    "value": true,
+    "choices": null
+   },
+   "--source": {
+    "name": "--source",
+    "value": true,
+    "choices": null
+   },
+   "--wait": {
+    "name": "--no-wait",
+    "value": false,
+    "choices": null
+   },
+   "--no-wait": {
+    "name": "--no-wait",
+    "value": false,
+    "choices": null
+   },
+   "--timeout": {
+    "name": "--timeout",
+    "value": true,
+    "choices": null
+   },
+   "--interval": {
+    "name": "--interval",
+    "value": true,
+    "choices": null
+   },
+   "--retry": {
+    "name": "--retry",
+    "value": true,
+    "choices": null
+   },
+   "--json": {
+    "name": "--json",
+    "value": false,
+    "choices": null
+   },
+   "--help": {
+    "name": "--help",
+    "value": false,
+    "choices": null
+   }
+  }
+ },
+ "generate infographic": {
+  "min_pos": 0,
+  "max_pos": 1,
+  "options": {
+   "--later": {
+    "name": "--later",
+    "value": false,
+    "choices": null
+   },
+   "--prompt-file": {
+    "name": "--prompt-file",
+    "value": true,
+    "choices": null
+   },
+   "-n": {
+    "name": "--notebook",
+    "value": true,
+    "choices": null
+   },
+   "--notebook": {
+    "name": "--notebook",
+    "value": true,
+    "choices": null
+   },
+   "--orientation": {
+    "name": "--orientation",
+    "value": true,
+    "choices": [
+     "landscape",
+     "portrait",
+     "square"
+    ]
+   },
+   "--detail": {
+    "name": "--detail",
+    "value": true,
+    "choices": [
+     "concise",
+     "standard",
+     "detailed"
+    ]
+   },
+   "--style": {
+    "name": "--style",
+    "value": true,
+    "choices": [
+     "auto",
+     "sketch-note",
+     "professional",
+     "bento-grid",
+     "editorial",
+     "instructional",
+     "bricks",
+     "clay",
+     "anime",
+     "kawaii",
+     "scientific"
+    ]
+   },
+   "--language": {
+    "name": "--language",
+    "value": true,
+    "choices": null
+   },
+   "-s": {
+    "name": "--source",
+    "value": true,
+    "choices": null
+   },
+   "--source": {
+    "name": "--source",
+    "value": true,
+    "choices": null
+   },
+   "--wait": {
+    "name": "--no-wait",
+    "value": false,
+    "choices": null
+   },
+   "--no-wait": {
+    "name": "--no-wait",
+    "value": false,
+    "choices": null
+   },
+   "--timeout": {
+    "name": "--timeout",
+    "value": true,
+    "choices": null
+   },
+   "--interval": {
+    "name": "--interval",
+    "value": true,
+    "choices": null
+   },
+   "--retry": {
+    "name": "--retry",
+    "value": true,
+    "choices": null
+   },
+   "--json": {
+    "name": "--json",
+    "value": false,
+    "choices": null
+   },
+   "--help": {
+    "name": "--help",
+    "value": false,
+    "choices": null
+   }
+  }
+ },
+ "generate slide-deck": {
+  "min_pos": 0,
+  "max_pos": 1,
+  "options": {
+   "--later": {
+    "name": "--later",
+    "value": false,
+    "choices": null
+   },
+   "--prompt-file": {
+    "name": "--prompt-file",
+    "value": true,
+    "choices": null
+   },
+   "-n": {
+    "name": "--notebook",
+    "value": true,
+    "choices": null
+   },
+   "--notebook": {
+    "name": "--notebook",
+    "value": true,
+    "choices": null
+   },
+   "--format": {
+    "name": "--format",
+    "value": true,
+    "choices": [
+     "detailed",
+     "presenter"
+    ]
+   },
+   "--length": {
+    "name": "--length",
+    "value": true,
+    "choices": [
+     "default",
+     "short"
+    ]
+   },
+   "--language": {
+    "name": "--language",
+    "value": true,
+    "choices": null
+   },
+   "-s": {
+    "name": "--source",
+    "value": true,
+    "choices": null
+   },
+   "--source": {
+    "name": "--source",
+    "value": true,
+    "choices": null
+   },
+   "--wait": {
+    "name": "--no-wait",
+    "value": false,
+    "choices": null
+   },
+   "--no-wait": {
+    "name": "--no-wait",
+    "value": false,
+    "choices": null
+   },
+   "--timeout": {
+    "name": "--timeout",
+    "value": true,
+    "choices": null
+   },
+   "--interval": {
+    "name": "--interval",
+    "value": true,
+    "choices": null
+   },
+   "--retry": {
+    "name": "--retry",
+    "value": true,
+    "choices": null
+   },
+   "--json": {
+    "name": "--json",
+    "value": false,
+    "choices": null
+   },
+   "--help": {
+    "name": "--help",
+    "value": false,
+    "choices": null
+   }
+  }
+ },
+ "generate audio": {
+  "min_pos": 0,
+  "max_pos": 1,
+  "options": {
+   "--later": {
+    "name": "--later",
+    "value": false,
+    "choices": null
+   },
+   "--prompt-file": {
+    "name": "--prompt-file",
+    "value": true,
+    "choices": null
+   },
+   "-n": {
+    "name": "--notebook",
+    "value": true,
+    "choices": null
+   },
+   "--notebook": {
+    "name": "--notebook",
+    "value": true,
+    "choices": null
+   },
+   "--format": {
+    "name": "--format",
+    "value": true,
+    "choices": [
+     "deep-dive",
+     "brief",
+     "critique",
+     "debate"
+    ]
+   },
+   "--length": {
+    "name": "--length",
+    "value": true,
+    "choices": [
+     "short",
+     "default",
+     "long"
+    ]
+   },
+   "--language": {
+    "name": "--language",
+    "value": true,
+    "choices": null
+   },
+   "-s": {
+    "name": "--source",
+    "value": true,
+    "choices": null
+   },
+   "--source": {
+    "name": "--source",
+    "value": true,
+    "choices": null
+   },
+   "--wait": {
+    "name": "--no-wait",
+    "value": false,
+    "choices": null
+   },
+   "--no-wait": {
+    "name": "--no-wait",
+    "value": false,
+    "choices": null
+   },
+   "--timeout": {
+    "name": "--timeout",
+    "value": true,
+    "choices": null
+   },
+   "--interval": {
+    "name": "--interval",
+    "value": true,
+    "choices": null
+   },
+   "--retry": {
+    "name": "--retry",
+    "value": true,
+    "choices": null
+   },
+   "--json": {
+    "name": "--json",
+    "value": false,
+    "choices": null
+   },
+   "--help": {
+    "name": "--help",
+    "value": false,
+    "choices": null
+   }
+  }
+ },
+ "generate video": {
+  "min_pos": 0,
+  "max_pos": 1,
+  "options": {
+   "--later": {
+    "name": "--later",
+    "value": false,
+    "choices": null
+   },
+   "--prompt-file": {
+    "name": "--prompt-file",
+    "value": true,
+    "choices": null
+   },
+   "-n": {
+    "name": "--notebook",
+    "value": true,
+    "choices": null
+   },
+   "--notebook": {
+    "name": "--notebook",
+    "value": true,
+    "choices": null
+   },
+   "--format": {
+    "name": "--format",
+    "value": true,
+    "choices": [
+     "explainer",
+     "brief",
+     "cinematic",
+     "short"
+    ]
+   },
+   "--style": {
+    "name": "--style",
+    "value": true,
+    "choices": [
+     "auto",
+     "custom",
+     "classic",
+     "whiteboard",
+     "kawaii",
+     "anime",
+     "watercolor",
+     "retro-print",
+     "heritage",
+     "paper-craft"
+    ]
+   },
+   "--style-prompt": {
+    "name": "--style-prompt",
+    "value": true,
+    "choices": null
+   },
+   "--language": {
+    "name": "--language",
+    "value": true,
+    "choices": null
+   },
+   "-s": {
+    "name": "--source",
+    "value": true,
+    "choices": null
+   },
+   "--source": {
+    "name": "--source",
+    "value": true,
+    "choices": null
+   },
+   "--wait": {
+    "name": "--no-wait",
+    "value": false,
+    "choices": null
+   },
+   "--no-wait": {
+    "name": "--no-wait",
+    "value": false,
+    "choices": null
+   },
+   "--timeout": {
+    "name": "--timeout",
+    "value": true,
+    "choices": null
+   },
+   "--interval": {
+    "name": "--interval",
+    "value": true,
+    "choices": null
+   },
+   "--retry": {
+    "name": "--retry",
+    "value": true,
+    "choices": null
+   },
+   "--json": {
+    "name": "--json",
+    "value": false,
+    "choices": null
+   },
+   "--help": {
+    "name": "--help",
+    "value": false,
+    "choices": null
+   }
+  }
+ },
+ "download report": {
+  "min_pos": 0,
+  "max_pos": 1,
+  "options": {
+   "-n": {
+    "name": "--notebook",
+    "value": true,
+    "choices": null
+   },
+   "--notebook": {
+    "name": "--notebook",
+    "value": true,
+    "choices": null
+   },
+   "--latest": {
+    "name": "--latest",
+    "value": false,
+    "choices": null
+   },
+   "--earliest": {
+    "name": "--earliest",
+    "value": false,
+    "choices": null
+   },
+   "--all": {
+    "name": "--all",
+    "value": false,
+    "choices": null
+   },
+   "--name": {
+    "name": "--name",
+    "value": true,
+    "choices": null
+   },
+   "-a": {
+    "name": "--artifact",
+    "value": true,
+    "choices": null
+   },
+   "--artifact": {
+    "name": "--artifact",
+    "value": true,
+    "choices": null
+   },
+   "--json": {
+    "name": "--json",
+    "value": false,
+    "choices": null
+   },
+   "--dry-run": {
+    "name": "--dry-run",
+    "value": false,
+    "choices": null
+   },
+   "--force": {
+    "name": "--force",
+    "value": false,
+    "choices": null
+   },
+   "--no-clobber": {
+    "name": "--no-clobber",
+    "value": false,
+    "choices": null
+   },
+   "--help": {
+    "name": "--help",
+    "value": false,
+    "choices": null
+   }
+  }
+ },
+ "download quiz": {
+  "min_pos": 0,
+  "max_pos": 1,
+  "options": {
+   "-n": {
+    "name": "--notebook",
+    "value": true,
+    "choices": null
+   },
+   "--notebook": {
+    "name": "--notebook",
+    "value": true,
+    "choices": null
+   },
+   "--latest": {
+    "name": "--latest",
+    "value": false,
+    "choices": null
+   },
+   "--earliest": {
+    "name": "--earliest",
+    "value": false,
+    "choices": null
+   },
+   "--all": {
+    "name": "--all",
+    "value": false,
+    "choices": null
+   },
+   "--name": {
+    "name": "--name",
+    "value": true,
+    "choices": null
+   },
+   "-a": {
+    "name": "--artifact",
+    "value": true,
+    "choices": null
+   },
+   "--artifact": {
+    "name": "--artifact",
+    "value": true,
+    "choices": null
+   },
+   "--json": {
+    "name": "--json",
+    "value": false,
+    "choices": null
+   },
+   "--dry-run": {
+    "name": "--dry-run",
+    "value": false,
+    "choices": null
+   },
+   "--force": {
+    "name": "--force",
+    "value": false,
+    "choices": null
+   },
+   "--no-clobber": {
+    "name": "--no-clobber",
+    "value": false,
+    "choices": null
+   },
+   "--format": {
+    "name": "--format",
+    "value": true,
+    "choices": [
+     "json",
+     "markdown",
+     "html"
+    ]
+   },
+   "--help": {
+    "name": "--help",
+    "value": false,
+    "choices": null
+   }
+  }
+ },
+ "download flashcards": {
+  "min_pos": 0,
+  "max_pos": 1,
+  "options": {
+   "-n": {
+    "name": "--notebook",
+    "value": true,
+    "choices": null
+   },
+   "--notebook": {
+    "name": "--notebook",
+    "value": true,
+    "choices": null
+   },
+   "--latest": {
+    "name": "--latest",
+    "value": false,
+    "choices": null
+   },
+   "--earliest": {
+    "name": "--earliest",
+    "value": false,
+    "choices": null
+   },
+   "--all": {
+    "name": "--all",
+    "value": false,
+    "choices": null
+   },
+   "--name": {
+    "name": "--name",
+    "value": true,
+    "choices": null
+   },
+   "-a": {
+    "name": "--artifact",
+    "value": true,
+    "choices": null
+   },
+   "--artifact": {
+    "name": "--artifact",
+    "value": true,
+    "choices": null
+   },
+   "--json": {
+    "name": "--json",
+    "value": false,
+    "choices": null
+   },
+   "--dry-run": {
+    "name": "--dry-run",
+    "value": false,
+    "choices": null
+   },
+   "--force": {
+    "name": "--force",
+    "value": false,
+    "choices": null
+   },
+   "--no-clobber": {
+    "name": "--no-clobber",
+    "value": false,
+    "choices": null
+   },
+   "--format": {
+    "name": "--format",
+    "value": true,
+    "choices": [
+     "json",
+     "markdown",
+     "html"
+    ]
+   },
+   "--help": {
+    "name": "--help",
+    "value": false,
+    "choices": null
+   }
+  }
+ },
+ "download mind-map": {
+  "min_pos": 0,
+  "max_pos": 1,
+  "options": {
+   "-n": {
+    "name": "--notebook",
+    "value": true,
+    "choices": null
+   },
+   "--notebook": {
+    "name": "--notebook",
+    "value": true,
+    "choices": null
+   },
+   "--latest": {
+    "name": "--latest",
+    "value": false,
+    "choices": null
+   },
+   "--earliest": {
+    "name": "--earliest",
+    "value": false,
+    "choices": null
+   },
+   "--all": {
+    "name": "--all",
+    "value": false,
+    "choices": null
+   },
+   "--name": {
+    "name": "--name",
+    "value": true,
+    "choices": null
+   },
+   "-a": {
+    "name": "--artifact",
+    "value": true,
+    "choices": null
+   },
+   "--artifact": {
+    "name": "--artifact",
+    "value": true,
+    "choices": null
+   },
+   "--json": {
+    "name": "--json",
+    "value": false,
+    "choices": null
+   },
+   "--dry-run": {
+    "name": "--dry-run",
+    "value": false,
+    "choices": null
+   },
+   "--force": {
+    "name": "--force",
+    "value": false,
+    "choices": null
+   },
+   "--no-clobber": {
+    "name": "--no-clobber",
+    "value": false,
+    "choices": null
+   },
+   "--help": {
+    "name": "--help",
+    "value": false,
+    "choices": null
+   }
+  }
+ },
+ "download data-table": {
+  "min_pos": 0,
+  "max_pos": 1,
+  "options": {
+   "-n": {
+    "name": "--notebook",
+    "value": true,
+    "choices": null
+   },
+   "--notebook": {
+    "name": "--notebook",
+    "value": true,
+    "choices": null
+   },
+   "--latest": {
+    "name": "--latest",
+    "value": false,
+    "choices": null
+   },
+   "--earliest": {
+    "name": "--earliest",
+    "value": false,
+    "choices": null
+   },
+   "--all": {
+    "name": "--all",
+    "value": false,
+    "choices": null
+   },
+   "--name": {
+    "name": "--name",
+    "value": true,
+    "choices": null
+   },
+   "-a": {
+    "name": "--artifact",
+    "value": true,
+    "choices": null
+   },
+   "--artifact": {
+    "name": "--artifact",
+    "value": true,
+    "choices": null
+   },
+   "--json": {
+    "name": "--json",
+    "value": false,
+    "choices": null
+   },
+   "--dry-run": {
+    "name": "--dry-run",
+    "value": false,
+    "choices": null
+   },
+   "--force": {
+    "name": "--force",
+    "value": false,
+    "choices": null
+   },
+   "--no-clobber": {
+    "name": "--no-clobber",
+    "value": false,
+    "choices": null
+   },
+   "--help": {
+    "name": "--help",
+    "value": false,
+    "choices": null
+   }
+  }
+ },
+ "download infographic": {
+  "min_pos": 0,
+  "max_pos": 1,
+  "options": {
+   "-n": {
+    "name": "--notebook",
+    "value": true,
+    "choices": null
+   },
+   "--notebook": {
+    "name": "--notebook",
+    "value": true,
+    "choices": null
+   },
+   "--latest": {
+    "name": "--latest",
+    "value": false,
+    "choices": null
+   },
+   "--earliest": {
+    "name": "--earliest",
+    "value": false,
+    "choices": null
+   },
+   "--all": {
+    "name": "--all",
+    "value": false,
+    "choices": null
+   },
+   "--name": {
+    "name": "--name",
+    "value": true,
+    "choices": null
+   },
+   "-a": {
+    "name": "--artifact",
+    "value": true,
+    "choices": null
+   },
+   "--artifact": {
+    "name": "--artifact",
+    "value": true,
+    "choices": null
+   },
+   "--json": {
+    "name": "--json",
+    "value": false,
+    "choices": null
+   },
+   "--dry-run": {
+    "name": "--dry-run",
+    "value": false,
+    "choices": null
+   },
+   "--force": {
+    "name": "--force",
+    "value": false,
+    "choices": null
+   },
+   "--no-clobber": {
+    "name": "--no-clobber",
+    "value": false,
+    "choices": null
+   },
+   "--help": {
+    "name": "--help",
+    "value": false,
+    "choices": null
+   }
+  }
+ },
+ "download slide-deck": {
+  "min_pos": 0,
+  "max_pos": 1,
+  "options": {
+   "-n": {
+    "name": "--notebook",
+    "value": true,
+    "choices": null
+   },
+   "--notebook": {
+    "name": "--notebook",
+    "value": true,
+    "choices": null
+   },
+   "--latest": {
+    "name": "--latest",
+    "value": false,
+    "choices": null
+   },
+   "--earliest": {
+    "name": "--earliest",
+    "value": false,
+    "choices": null
+   },
+   "--all": {
+    "name": "--all",
+    "value": false,
+    "choices": null
+   },
+   "--name": {
+    "name": "--name",
+    "value": true,
+    "choices": null
+   },
+   "-a": {
+    "name": "--artifact",
+    "value": true,
+    "choices": null
+   },
+   "--artifact": {
+    "name": "--artifact",
+    "value": true,
+    "choices": null
+   },
+   "--json": {
+    "name": "--json",
+    "value": false,
+    "choices": null
+   },
+   "--dry-run": {
+    "name": "--dry-run",
+    "value": false,
+    "choices": null
+   },
+   "--force": {
+    "name": "--force",
+    "value": false,
+    "choices": null
+   },
+   "--no-clobber": {
+    "name": "--no-clobber",
+    "value": false,
+    "choices": null
+   },
+   "--format": {
+    "name": "--format",
+    "value": true,
+    "choices": [
+     "pdf",
+     "pptx"
+    ]
+   },
+   "--help": {
+    "name": "--help",
+    "value": false,
+    "choices": null
+   }
+  }
+ },
+ "download audio": {
+  "min_pos": 0,
+  "max_pos": 1,
+  "options": {
+   "-n": {
+    "name": "--notebook",
+    "value": true,
+    "choices": null
+   },
+   "--notebook": {
+    "name": "--notebook",
+    "value": true,
+    "choices": null
+   },
+   "--latest": {
+    "name": "--latest",
+    "value": false,
+    "choices": null
+   },
+   "--earliest": {
+    "name": "--earliest",
+    "value": false,
+    "choices": null
+   },
+   "--all": {
+    "name": "--all",
+    "value": false,
+    "choices": null
+   },
+   "--name": {
+    "name": "--name",
+    "value": true,
+    "choices": null
+   },
+   "-a": {
+    "name": "--artifact",
+    "value": true,
+    "choices": null
+   },
+   "--artifact": {
+    "name": "--artifact",
+    "value": true,
+    "choices": null
+   },
+   "--json": {
+    "name": "--json",
+    "value": false,
+    "choices": null
+   },
+   "--dry-run": {
+    "name": "--dry-run",
+    "value": false,
+    "choices": null
+   },
+   "--force": {
+    "name": "--force",
+    "value": false,
+    "choices": null
+   },
+   "--no-clobber": {
+    "name": "--no-clobber",
+    "value": false,
+    "choices": null
+   },
+   "--help": {
+    "name": "--help",
+    "value": false,
+    "choices": null
+   }
+  }
+ },
+ "download video": {
+  "min_pos": 0,
+  "max_pos": 1,
+  "options": {
+   "-n": {
+    "name": "--notebook",
+    "value": true,
+    "choices": null
+   },
+   "--notebook": {
+    "name": "--notebook",
+    "value": true,
+    "choices": null
+   },
+   "--latest": {
+    "name": "--latest",
+    "value": false,
+    "choices": null
+   },
+   "--earliest": {
+    "name": "--earliest",
+    "value": false,
+    "choices": null
+   },
+   "--all": {
+    "name": "--all",
+    "value": false,
+    "choices": null
+   },
+   "--name": {
+    "name": "--name",
+    "value": true,
+    "choices": null
+   },
+   "-a": {
+    "name": "--artifact",
+    "value": true,
+    "choices": null
+   },
+   "--artifact": {
+    "name": "--artifact",
+    "value": true,
+    "choices": null
+   },
+   "--json": {
+    "name": "--json",
+    "value": false,
+    "choices": null
+   },
+   "--dry-run": {
+    "name": "--dry-run",
+    "value": false,
+    "choices": null
+   },
+   "--force": {
+    "name": "--force",
+    "value": false,
+    "choices": null
+   },
+   "--no-clobber": {
+    "name": "--no-clobber",
+    "value": false,
+    "choices": null
+   },
+   "--help": {
+    "name": "--help",
+    "value": false,
+    "choices": null
+   }
+  }
+ }
+}

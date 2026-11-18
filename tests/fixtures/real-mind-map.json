@@ -1,0 +1,406 @@
+{
+  "name": "User Insights and Decision Making Framework",
+  "children": [
+    {
+      "name": "Core Decision Framework (Reforge)",
+      "children": [
+        {
+          "name": "Left Half of Framework (Week 1)",
+          "children": [
+            {
+              "name": "Defining Decisions"
+            },
+            {
+              "name": "Mapping Evidence"
+            },
+            {
+              "name": "Planning the Approach"
+            }
+          ]
+        },
+        {
+          "name": "Right Half of Framework (Week 4)",
+          "children": [
+            {
+              "name": "Synthesizing Data"
+            },
+            {
+              "name": "Helping Teams Make Decisions"
+            }
+          ]
+        },
+        {
+          "name": "Key Question Sequence",
+          "children": [
+            {
+              "name": "What (Research Findings)"
+            },
+            {
+              "name": "So What (Why it Matters)"
+            },
+            {
+              "name": "Now What (Actionable Plan)"
+            }
+          ]
+        },
+        {
+          "name": "Organizational Layers of Decision Making",
+          "children": [
+            {
+              "name": "Organizational Level (Lower Interval, Higher Scope)"
+            },
+            {
+              "name": "Product Line / Business Level"
+            },
+            {
+              "name": "Team Level (High Impact Small Decisions)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Assurian Case Study (Foundational Research)",
+      "children": [
+        {
+          "name": "Initial Problem Statement",
+          "children": [
+            {
+              "name": "Teams struggling with decision making"
+            },
+            {
+              "name": "Asked to build products based on client suggestions"
+            },
+            {
+              "name": "Carrier-centricity (not human-centricity)"
+            },
+            {
+              "name": "Sales culture demanded fast MVPs without clarity"
+            },
+            {
+              "name": "Siloed teams working off assumptions"
+            },
+            {
+              "name": "Reframed as: How do we best serve our customers and who are they?"
+            }
+          ]
+        },
+        {
+          "name": "Business Context (Assurian)",
+          "children": [
+            {
+              "name": "Biggest tech company you've never heard of"
+            },
+            {
+              "name": "300 Million customers served"
+            },
+            {
+              "name": "Historically focused on cell phone insurance (B2B2C)"
+            },
+            {
+              "name": "Launching new D2C smart home insurance/support"
+            }
+          ]
+        },
+        {
+          "name": "Evidence Needs Identified",
+          "children": [
+            {
+              "name": "Understand target audience/customer needs"
+            },
+            {
+              "name": "Customer Segmentation (market sizing)"
+            },
+            {
+              "name": "Competitive/Market Intelligence"
+            },
+            {
+              "name": "Internal Company Context (Finance, Sales Culture)"
+            },
+            {
+              "name": "Nuanced understanding of users (beyond demographics)"
+            },
+            {
+              "name": "Customer experience consistency"
+            }
+          ]
+        },
+        {
+          "name": "Research Approach (Mixed Methods)",
+          "children": [
+            {
+              "name": "Goal: Contextual understanding (tech usage, home ecosystem)"
+            },
+            {
+              "name": "Research Frame: Technology usage/motivators (when things go wrong)"
+            },
+            {
+              "name": "Methods Used",
+              "children": [
+                {
+                  "name": "In-Home Ethnographies (EFMOs)"
+                },
+                {
+                  "name": "Co-Creation Labs (Understand perspectives, mental models)"
+                },
+                {
+                  "name": "Online Survey (Quantify/Verify personas, build bridge)"
+                }
+              ]
+            },
+            {
+              "name": "Recruiting Strategy",
+              "children": [
+                {
+                  "name": "Leveraged Marketing Segmentation Schema"
+                },
+                {
+                  "name": "Used segmentation codes for Qual recruiting"
+                },
+                {
+                  "name": "Targeted US population cross-cut of existing customers"
+                }
+              ]
+            },
+            {
+              "name": "Timeline/Execution",
+              "children": [
+                {
+                  "name": "Aligned with Q1 Strategic Planning"
+                },
+                {
+                  "name": "Long project (9 weeks in field/synthesis)"
+                },
+                {
+                  "name": "Involved stakeholders (PMs, Engineers, VP Product)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Key Outcomes/Activation",
+          "children": [
+            {
+              "name": "Persona Cards (6 Key Behavioral Drivers)"
+            },
+            {
+              "name": "Typing Tool (88-90% accuracy)"
+            },
+            {
+              "name": "Guiding Principles (Guardrails for teams)"
+            },
+            {
+              "name": "Custom Activation Sessions (Develop scenarios/storyboards)"
+            },
+            {
+              "name": "Shift from Carrier-Centricity to Human-Centricity"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Facebook Ad Tools Case Studies",
+      "children": [
+        {
+          "name": "Ads Manager Interface (Technically Sophisticated Advertisers)",
+          "children": [
+            {
+              "name": "Initial Decision: Improve Ads Manager for sophisticated users (Too solutions focused)"
+            },
+            {
+              "name": "Observed Behavior: Sophisticated users didn't spend much time in tool"
+            },
+            {
+              "name": "Refined Decision: How to better support sophisticated advertisers (Problem focused)"
+            },
+            {
+              "name": "Build Phase: Storytelling (Daily/Weekly process, recent campaigns)"
+            },
+            {
+              "name": "Peak Questions: Most important metrics, tools used (on/off Facebook)"
+            },
+            {
+              "name": "Key Findings: Confusing metric language (ROAS), process misalignment"
+            },
+            {
+              "name": "Outcome: Clarified metric explanations, new design standards, Blueprint course (education)"
+            },
+            {
+              "name": "Follow-Up Methods: Card Sort, Low Fidelity Mocks"
+            }
+          ]
+        },
+        {
+          "name": "Ads API (Highly Technical Product)",
+          "children": [
+            {
+              "name": "Goal: Understand usage and potential improvements (High cost of breaking change)"
+            },
+            {
+              "name": "Challenge: Need technical parity, avoid 'interrogation'"
+            },
+            {
+              "name": "Interview Approach (Role Assignment)",
+              "children": [
+                {
+                  "name": "Researcher: Facilitator, on-script, high-level questions"
+                },
+                {
+                  "name": "Subject Matter Expert: Technical follow-up, speaks developer language"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Global Ads Effectiveness (Synthesis/Decision Making)",
+          "children": [
+            {
+              "name": "Problem: US-focused ad tools, large advertisers frustrated"
+            },
+            {
+              "name": "Markets Studied: Argentina, India, Indonesia, South Africa, Turkey"
+            },
+            {
+              "name": "Synthesis Approach",
+              "children": [
+                {
+                  "name": "Systematic comparison (markets/audiences)"
+                },
+                {
+                  "name": "Focus on convergence/divergence (How things coexist)"
+                },
+                {
+                  "name": "Situation Complication Framework"
+                }
+              ]
+            },
+            {
+              "name": "Key Findings (Examples)",
+              "children": [
+                {
+                  "name": "India: Low trust environment; Facebook is too open"
+                },
+                {
+                  "name": "Indonesia: Ads are content, content is meant to be shared (no sharing mechanism)"
+                },
+                {
+                  "name": "Global: Businesses don't know what to do with Pages"
+                }
+              ]
+            },
+            {
+              "name": "Delivery/Evangelism",
+              "children": [
+                {
+                  "name": "Format Audience Fit (All-hands vs Team write-ups)"
+                },
+                {
+                  "name": "Org-wide All-Hands: Top findings, narrative control"
+                },
+                {
+                  "name": "Team Specific Shareouts: Focused decisions, pre-reads"
+                },
+                {
+                  "name": "Project Facebook Group: Live blogging, Q&A (Awareness/Excitement)"
+                },
+                {
+                  "name": "Posters/Visuals: Reinforce high-level principles"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Spotify Case Study (Mixed Methods Research)",
+      "children": [
+        {
+          "name": "Core Decision: Increase user satisfaction with desktop listening"
+        },
+        {
+          "name": "Method 1: Survey (Attitudinal Data)",
+          "children": [
+            {
+              "name": "Type: Intercept Survey (In-product feedback)"
+            },
+            {
+              "name": "Key Question: How satisfied or dissatisfied are you with your Spotify listening experience on desktop today?"
+            },
+            {
+              "name": "Scale: 7-point Bipolar Scale (Accounts for positive/negative sentiment)"
+            },
+            {
+              "name": "Qualifying Question: Open-ended text box (Explain why this response)"
+            },
+            {
+              "name": "Survey Testing: Cognitive Walkthroughs (Test jargon/comprehension)"
+            },
+            {
+              "name": "Data Combination: Appending Behavioral Data (User retention, engagement, device context)"
+            }
+          ]
+        },
+        {
+          "name": "Driver Analysis (Hypotheses)",
+          "children": [
+            {
+              "name": "Initial Drivers: Content Discovery, Listening Functionality, Ease of Creation, Ads Quantity"
+            },
+            {
+              "name": "Hypothesis Example: If we increase ease of creation, we will increase satisfaction"
+            },
+            {
+              "name": "Multiple Interventions (Expressions of Hypothesis)",
+              "children": [
+                {
+                  "name": "Playlist Extension Feature"
+                },
+                {
+                  "name": "Efficient way to add net new content to playlist"
+                },
+                {
+                  "name": "Algorithmic Playlist (No forced creation)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Method 2: Usability Testing/Experimentation",
+          "children": [
+            {
+              "name": "Qualitative: Moderated Study (Understand the 'why' behind needs)"
+            },
+            {
+              "name": "Quantitative: A/B Test (Understand causal impact on satisfaction/behavioral metrics)"
+            },
+            {
+              "name": "Behavioral Economics: Used to modulate hypotheses (e.g., Social Proof messaging)"
+            }
+          ]
+        },
+        {
+          "name": "Mixed Methods Philosophy",
+          "children": [
+            {
+              "name": "Sequential: Quant -> Qual -> Quant (Keep pace with PD cycle)"
+            },
+            {
+              "name": "Simultaneous: Study same group, same time, different methods"
+            },
+            {
+              "name": "Core Principle: Each method balances strengths/weaknesses"
+            },
+            {
+              "name": "Organizational Structure: User Research + Data Science on same team"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

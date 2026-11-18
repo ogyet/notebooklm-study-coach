@@ -1,0 +1,14 @@
+{
+  "name": "notebooklm-study-coach",
+  "description": "Claude skill that turns your own material into focused NotebookLM notebooks and teaches it back to you.",
+  "owner": {
+    "name": "ogyet"
+  },
+  "plugins": [
+    {
+      "name": "notebooklm-study-coach",
+      "source": "./",
+      "description": "Split a subject into topics, build one NotebookLM notebook per topic from your own sources, run a cited learning loop, and make uncluttered Studio outputs within a usage budget."
+    }
+  ]
+}

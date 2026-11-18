@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: new-topic-ai-pricing
+expected_outcome: |
+  States what the learner wants to be able to do about pricing, checks overlap and budget, proposes one or more topic notebooks with sources that include a dissenting view, a learning loop of 6 to 9 questions, a costed pack of Studio outputs with a focus for each visual, and stops for approval without creating anything.
