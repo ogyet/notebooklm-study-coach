@@ -19,9 +19,14 @@ import time
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from _nlm import PAUSE, err_text, is_rate_limited, load_manifest, project_dir, run, run_text, save_manifest, source_ids, sources  # noqa: E402
 
-CITE = " Cite the passages you rely on. Where the sources do not cover something, write 'not in sources'."
+# Quote first, then answer: answers built on quoted passages stay closer to the sources. Each question is
+# asked in one continuing conversation (`ask --new` would delete it), so tell NotebookLM to take facts from
+# the sources, not from its own earlier answers. Gap markers are counted below as "not in sources".
+CITE = (" Take every fact from the selected sources; use earlier answers in this chat only to know which case"
+        " or idea I mean. Start by quoting the 2 to 4 passages that matter most, one sentence each, then answer"
+        " from them. Mark any step or claim the sources do not support as [not in sources] instead of filling the gap.")
 PLACEHOLDER = re.compile(r"\{[a-zA-Z_ ]{2,40}\}")
-COMPARE_PHASES = ("disagree", "apply", "principles", "fails", "deliverable", "triage")
+COMPARE_PHASES = ("disagree", "apply", "principles", "fails", "compare", "deliverable", "triage")
 
 
 def from_history(nid, text):

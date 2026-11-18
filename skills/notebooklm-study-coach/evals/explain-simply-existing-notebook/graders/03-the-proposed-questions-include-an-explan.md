@@ -4,4 +4,4 @@ focus: trace
 weight: 1
 ---
 
-The proposed questions include an explanation at several levels (five-year-old / teenager / practitioner, or explicitly 'explain like I'm five') or a first-principles breakdown
+The proposed questions include a plain step-by-step explanation of how antifragility works, a comparison of two cases that share the same principle, or a first-principles breakdown

@@ -32,8 +32,8 @@ It works on anything NotebookLM can swallow: PDFs, books from your Calibre libra
 
 1. **Say what you want to be able to do.** One sentence: "I want to be able to explain X / judge Y / decide Z." Everything else is judged against it.
 2. **Split the subject.** Three to seven topics, each small enough to explain on one page. Nothing that needs the word "and" in its title.
-3. **One notebook per topic.** Existing notebooks get reused and sources get *copied*, never re-uploaded or deleted.
-4. **Eight questions, in a deliberate order.** A real problem with the answer hidden, so you take a swing first. Then the worked solution. Then the few first principles it all rests on. Then the same idea at three levels: for a five-year-old, a teenager, and someone who does this for a living. Then where it breaks, where the sources disagree, and what none of them cover.
+3. **One notebook per topic.** Existing notebooks get reused and sources get *copied*, never re-uploaded or deleted. When a topic needs more sources, a cheaper model (Sonnet) goes looking: originals over summaries, the strongest credible dissent, and text NotebookLM can actually read. About five good sources to start.
+4. **Eight questions, in a deliberate order, then as many as you like.** A real problem with the answer hidden, so you take a swing first. Then the worked solution. Then the few first principles it all rests on. Then a second case that looks different but works the same way. Then where it breaks, where each source stands, and what none of them cover. Every question asks NotebookLM to quote its passages first and mark what the sources don't support.
 5. **A pack of Studio outputs.** Mind map, plain-language guide, quiz, flashcards, and optionally a comparison table, an infographic, a short deck. One idea per visual.
 6. **Teach-back.** You explain the topic from memory, in about five sentences, with nothing open. The notebook marks what's wrong or missing. This is the moment it either sticks or it doesn't.
 7. **Review dates** about 2, 7 and 21 days out, because memory is a leaky bucket and you should know it.
@@ -115,7 +115,7 @@ Then ask Claude something like *"help me learn X from these sources."* Your work
 ```
 skills/notebooklm-study-coach/
   SKILL.md                 the workflow Claude follows
-  references/              plan template, prompt library, Studio playbook, CLI cheat sheet,
+  references/              plan template, source-finder brief, prompt library, Studio playbook, CLI cheat sheet,
                            guardrails, and the evidence behind each learning technique
   scripts/
     nlm_budget.py          prices a plan against your usage (read-only)

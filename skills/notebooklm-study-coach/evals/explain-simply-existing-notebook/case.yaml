@@ -1,4 +1,4 @@
 schema_version: "1.1"
 name: explain-simply-existing-notebook
 expected_outcome: |
-  Finds that 5 · Risk & Money already holds the Taleb books, plans to work from that notebook (or copy from it) without uploading anything again, proposes a short plain-language loop that includes a three-level or explain-like-I'm-five question and a teach-back from memory, does not refuse or stall for lack of a decision, and asks for approval before asking or generating anything.
+  Finds that 5 · Risk & Money already holds the Taleb books, plans to work from that notebook (or copy from it) without uploading anything again, proposes a short plain-language loop that includes a plain how-it-works or compare-cases question and a teach-back from memory, does not refuse or stall for lack of a decision, and asks for approval before asking or generating anything.

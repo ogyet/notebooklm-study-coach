@@ -11,19 +11,29 @@ Why each part of the learning loop is there and how strong the evidence is. Use 
 | **Explaining why, in your own words** (self-explanation) | Teach-back; "where it breaks" | Moderate. |
 | **A short attempt before being taught** | Problem first | Moderate. A meta-analysis of 53 studies found a gain for older students and adults (it reversed for young children), and only when a clear explanation follows. Left to discover everything alone, beginners learn less. |
 | **Worked examples** | Resolve it | Strong for beginners. As skill grows, have the learner try first. |
-| **Comparing cases** | Disagreements; comparison table | Moderate, stronger when the principle is stated after the cases. |
-| **Feynman technique** | Three levels, then teach-back | Thin as a named method. Its parts hold up: people overrate how well they understand how things work, and teaching helps mainly when it is done from memory. |
+| **Comparing cases** | Compare cases; where it breaks (the near-miss case); comparison table | Moderate to strong: a meta-analysis of 57 experiments found a medium effect, largest when the learner looks for what the cases share before the principle is stated. |
+| **Feynman technique** | How it works, then teach-back | Thin as a named method. Its parts hold up: people overrate how well they understand how things work, and teaching helps mainly when it is done from memory. |
 | **First principles** | First principles | No studies of it as a study method. Experts do organize a field by its principles while beginners sort by surface features, which is the reason to build the skeleton early. |
-| **Explain like I'm five** | Three levels | No controlled evidence for it as such. Plain explanations help a beginner get started and can slow an expert, so drop level 1 for someone who already works in the field. |
+| **Explain like I'm five / three levels** | Removed from the loop | No controlled evidence for it, and reading three explanations written by someone else is passive. Plain explanations still help a beginner start, so "How it works" keeps one plain explanation with one comparison and its limit. |
 | **Re-reading, highlighting, summaries** | Reading the guide, listening to audio | Weak on their own. Treat them as a way in, not as the learning. |
 
-**What this means in practice.** If only two steps fit, keep the three-level explanation and the teach-back. If the learner skips the teach-back, say what they are giving up: the explanation will feel understood without being remembered.
+**What this means in practice.** If only two steps fit, keep the problem-first case and the teach-back: they are the two steps where the learner does the work. If the learner skips the teach-back, say what they are giving up: the explanation will feel understood when it may not be.
+
+## Why questions are worded the way they are
+
+The phrasing rules in `prompt-library.md` come from tests on grounded AI models, mostly on models older than NotebookLM's current one, so trust the direction more than the size.
+- **Quote first.** Asking for the supporting passages before the answer keeps answers closer to the sources. NotebookLM still attaches citations that don't quite support a claim, so a citation is a pointer to check, not proof.
+- **One complete question per turn.** Across 15 models, spreading one task over several turns cost about 39% on average. Each question here is self-contained so the conversation's history matters less.
+- **Neutral wording.** A user's hinted answer cut model accuracy by up to 27%, and "are you sure?" made models change 32–86% of their answers.
+- **No brevity.** Asking for short answers made some models invent more.
+- **One line per source on disagreements.** Models given conflicting sources tend to let one speak for all; asking them to name the kind of conflict improved how they handled it.
+- **Accept "not in sources".** Asking again after "nothing relevant found" is when NotebookLM was seen to invent examples.
 
 ## Why plain words, and why the rules are strict
 
 - **Mechanism before name.** A name with nothing behind it feels like knowledge and isn't. Saying what happens first gives the name something to attach to.
 - **One comparison, with its limit.** A comparison carried too far teaches something false. Saying where it stops is what keeps a simple version honest.
-- **Never simplify into a falsehood.** Level 1 may leave things out; it may not say something untrue. That is why the template asks what level 1 simplified.
+- **Never simplify into a falsehood.** A plain explanation may leave things out; it may not say something untrue. That is why "How it works" ends by saying what it left out.
 
 ## Why one topic per notebook and per visual
 
@@ -43,4 +53,4 @@ Why each part of the learning loop is there and how strong the evidence is. Use 
 
 ## Sources for the evidence ratings
 
-Dunlosky et al. (2013), *Improving Students' Learning With Effective Learning Techniques*; Adesope et al. (2017) on practice testing; Sinha & Kapur (2021) on problem-solving before instruction; Kirschner, Sweller & Clark (2006) on unguided discovery; Rozenblit & Keil (2002) on overrating one's understanding; Koh et al. (2018) on teaching from memory; Alfieri et al. (2013) on comparing cases; Kalyuga et al. (2003) on support that slows experts. The research notes behind this file are in the skill's workspace folder (`research-v2/`).
+Dunlosky et al. (2013), *Improving Students' Learning With Effective Learning Techniques*; Adesope et al. (2017) on practice testing; Sinha & Kapur (2021) on problem-solving before instruction; Kirschner, Sweller & Clark (2006) on unguided discovery; Rozenblit & Keil (2002) on overrating one's understanding; Koh et al. (2018) on teaching from memory; Alfieri et al. (2013) on comparing cases; Kalyuga et al. (2003) on support that slows experts. On asking grounded models: Laban et al. (2025) on multi-turn conversations; Sharma et al. (2023) on sycophancy; Cattan et al. (2025) on conflicting sources; Hagar, Agustianto & Diakopoulos (2025) on NotebookLM's error types; Giskard's Phare benchmark on brevity. The research notes behind this file are in the skill's workspace folder (`research-v2/`).

@@ -35,7 +35,7 @@ Set `LEARNING_ROOT` to use a different root folder.
 **Verify with a current source or a person:** <facts that go out of date>
 ```
 
-A topic is the right size when it can be put as one question, explained on one page, learned from about 3–15 sources, and drawn with five main ideas or fewer.
+A topic is the right size when it can be put as one question, explained on one page, learned from about 5 to 15 sources, and drawn with five main ideas or fewer.
 
 ## manifest.json
 
@@ -66,7 +66,7 @@ One per topic notebook.
     {"id": "Q1", "phase": "problem", "pause_after": true, "text": "I want to be able to … do not give the solution …"},
     {"id": "Q2", "phase": "resolve", "text": "Here is my attempt at that case: {attempt}. Using only the sources, show step by step …"},
     {"id": "Q3", "phase": "principles", "text": "Break … down to the smallest claims it rests on …"},
-    {"id": "Q4", "phase": "layers", "text": "Explain … at three levels …", "only": ["book"]},
+    {"id": "Q4", "phase": "compare", "text": "In the sources on …, is there a second case that looks different from {the first case} …", "only": ["book", "article"]},
     {"id": "Q8", "phase": "teachback", "text": "Here is my explanation of …, written from memory: {my explanation}. …"}
   ],
   "pack": "standard",

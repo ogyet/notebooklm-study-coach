@@ -1,16 +1,17 @@
 ---
 name: notebooklm-study-coach
-description: Turns any material (books, PDFs, web pages, YouTube videos, notes, Drive docs) into focused NotebookLM (Gemini Notebook) notebooks through the local `notebooklm` CLI, then teaches it in plain language. Splits a subject into separate topics with one notebook each, keeps an index of what every notebook is for, and can tidy a notebook that mixes unrelated material. Runs a cited learning loop (problem first, first principles, explain-like-I'm-five at three levels, Feynman teach-back) and builds uncluttered Studio outputs, one topic per visual, within a usage budget. Use this whenever the user wants to learn, study or understand a topic from their own material; create, organize, split or clean up NotebookLM notebooks; add sources to one; get something explained simply from their sources; or make a report, study guide, mind map, slide deck, infographic, data table, quiz or flashcards in NotebookLM, even if they don't say "NotebookLM".
+description: Turns any material (books, PDFs, web pages, YouTube videos, notes, Drive docs) into focused NotebookLM (Gemini Notebook) notebooks through the local `notebooklm` CLI, then teaches it in plain language. Splits a subject into separate topics with one notebook each, keeps an index of what every notebook is for, and can tidy a notebook that mixes unrelated material. Finds sources with a cheaper model, then runs a cited question loop (problem first, first principles, comparing cases, disagreements, Feynman teach-back) and builds uncluttered Studio outputs, one topic per visual, within a usage budget. Use this whenever the user wants to learn, study or understand a topic from their own material; create, organize, split or clean up NotebookLM notebooks; add sources to one; get something explained simply from their sources; or make a report, study guide, mind map, slide deck, infographic, data table, quiz or flashcards in NotebookLM, even if they don't say "NotebookLM".
 allowed-tools: Bash(notebooklm list *) Bash(notebooklm usage *) Bash(notebooklm metadata *) Bash(notebooklm source list *) Bash(notebooklm artifact list *) Bash(notebooklm artifact get-prompt *) Bash(notebooklm artifact suggestions *) Bash(notebooklm note list *) Bash(notebooklm collection list *) Bash(notebooklm collection notebooks *) Bash(python3 -I ${CLAUDE_SKILL_DIR}/scripts/nlm_inventory.py *) Bash(python3 -I ${CLAUDE_SKILL_DIR}/scripts/nlm_overlap.py *) Bash(python3 -I ${CLAUDE_SKILL_DIR}/scripts/nlm_budget.py *) Bash(python3 -I ${CLAUDE_SKILL_DIR}/scripts/calibre_find.py *)
 ---
 
 # NotebookLM Study Coach
 
-Help the user understand a subject from their own material, fast, and keep what they learn. NotebookLM is where the research is collected and questioned. Where the material comes from doesn't matter: a book, a link, a video, a pasted note.
+Help the user understand any subject they are curious about, fast. The work is simple: get good sources into NotebookLM, ask it many well-built questions, and generate Studio content there with the right prompts. NotebookLM is where the research is collected and questioned. Where the material comes from doesn't matter: a book, a link, a video, a pasted note.
 
 ## The ideas behind it
 
-- **One notebook, one topic.** A notebook that mixes unrelated material gives vaguer answers and cluttered visuals, because everything in it competes for attention. So a subject is first split into topics, and each topic gets its own small notebook.
+- **NotebookLM repeats its sources faithfully, right or wrong.** It answers far more accurately than a general chatbot, but it repeats a weak source as readily as a strong one. So answer quality is set mostly by which sources go in and how each question is worded.
+- **One notebook, one topic.** A notebook that mixes unrelated material gives vaguer answers and cluttered visuals. Worse are sources that could answer the same question differently, such as two editions or a summary next to its original: the answers blend them. So a subject is first split into topics, and each topic gets its own small notebook.
 - **Show how the ideas connect.** Understanding a topic means seeing which idea leads to which, so every report carries small diagrams of those relationships, placed where each idea is explained, and the first-principles answer in the loop ends with one.
 - **One visual, one idea.** A graphic asked to cover four topics comes out crowded however it is styled. Crowding is fixed by narrowing what the visual is about, then by lighter settings, then by word limits.
 - **Plain words first.** Say how something works before naming it, explain each term where it first appears, and use one everyday comparison. This is how every answer, guide and visual should read.
@@ -45,8 +46,8 @@ Copy this checklist and work through it. Files live in `~/Documents/Learning/<su
 - [ ] 0. Budget check                 scripts/nlm_budget.py
 - [ ] 1. Problem and topic map        references/plan-template.md
 - [ ] 2. Reuse, copy or create        scripts/nlm_inventory.py, scripts/nlm_overlap.py
-- [ ] 3. Sources for each topic       any type, 3-15 per topic
-- [ ] 4. Learning loop questions      references/prompt-library.md
+- [ ] 3. Sources for each topic       references/source-finder.md (a cheaper model searches)
+- [ ] 4. Questions                    references/prompt-library.md
 - [ ] 5. Pack and visuals             references/studio-playbook.md (one topic per visual)
 - [ ] 6. USER APPROVES plan and cost
 - [ ] 7. Build                        scripts/nlm_build.py
@@ -67,7 +68,7 @@ Run `python3 -I scripts/nlm_budget.py --pack standard --topics N` to price a pla
 **The topic map.** Split the subject into 3–7 topics. A topic is the right size when all of these hold:
 - it can be put as one question
 - it could be explained on one page
-- it can be learned from about 3–15 sources
+- it can be learned from about 5 to 15 sources
 - a picture of it needs five main ideas or fewer
 
 A topic that fails gets split. Order topics so each one's prerequisites come first. Show the map and let the user choose which topics to build now, usually one to three. Write it to `topic-map.md`.
@@ -82,25 +83,36 @@ Run `python3 -I scripts/nlm_inventory.py` to see every notebook, and `scripts/nl
 
 ### 3. Sources for each topic
 
-A source can be a local file, a web page, a YouTube video, a pasted note, a Google Drive doc, or a copy from another notebook; the manifest fields are in `references/plan-template.md`. Aim for 3–15 per topic.
-- Include one source that disagrees with the others when there is one.
-- Add a short note about the learner's situation as a `text_file` when applying the ideas matters.
-- For facts that go out of date (rates, rules, prices), add a current primary source or put the fact on the verify list.
-- Finders are optional helpers: `scripts/calibre_find.py "terms"` for a Calibre library, and `notebooklm source add-research` for the web (it spends quota and adds sources, so it needs approval).
+A source can be a local file, a web page, a YouTube video, a pasted note, a Google Drive doc, or a copy from another notebook; the manifest fields are in `references/plan-template.md`.
 
-### 4. Learning loop questions
+**Finding them.** Start from what the user gave. When a topic needs more, don't search yourself: hand the search to a cheaper model with the brief in `references/source-finder.md` (a subagent on `model: "sonnet"`, one per topic, in parallel). Check the list it returns, then put the sources in the plan.
 
-Write 6–8 questions from `references/prompt-library.md`, in this order:
+**How many.** Start with about 5 strong sources. Add another only when it brings something new: an idea, evidence, a viewpoint or newer data. Stop when two in a row add nothing. Past about 15, or when one source is several times longer than the rest, split the topic or plan `only` for the long one.
+
+**What goes in.**
+- The original over a summary of it, and one copy of each work (not two editions).
+- The strongest credible source that disagrees with the others, when there is one.
+- For facts that go out of date (rates, rules, prices), a current primary source, or the fact goes on the verify list.
+- Text NotebookLM can read: a PDF with real text rather than a scan, a YouTube video with captions, a web page that isn't paywalled. A key table or chart goes in as a pasted `text_file`, because images on web pages aren't read.
+- A short note about the learner's situation as a `text_file`, when applying the ideas matters.
+
+### 4. Questions
+
+Start with the core loop from `references/prompt-library.md`, in this order:
 1. **Problem first:** one real case from the sources, presented without the answer. The learner tries it. (`pause_after`)
-2. **Resolve it:** how the sources solve the case, as a worked example, checked against the learner's attempt.
-3. **First principles:** the few basic claims the topic rests on, and how the rest follows from them, drawn as a small diagram.
-4. **Three levels:** the core ideas explained for a five-year-old, a teenager and a practitioner.
-5. **Where it breaks:** when the idea fails, and the mistakes beginners make.
-6. **Disagreements and gaps:** where the sources differ, and what none covers (with two or more sources).
-7. **Use it** (optional): apply it to the learner's own case, or build a checklist.
+2. **Resolve it:** how the sources solve the case, step by step as a chain of causes, checked against the learner's attempt.
+3. **First principles:** the few basic claims the topic rests on, which one would bring the rest down if it were false, and how the rest follows, drawn as a small diagram.
+4. **Compare cases:** a second case that looks different but works by the same principle; what the two share, then the principle in one sentence.
+5. **Where it breaks:** when the idea fails, a near-identical case that ends differently, and the mistakes beginners make.
+6. **Disagreements and gaps:** each source's position (or "silent"), each conflict and what kind it is, and what none covers (with two or more sources).
+7. **Decide or use it** (optional): the learner's situation as plain facts, the passages for and against, what would make the opposite choice right; or a checklist they can use.
 8. **Teach-back:** the learner explains the topic from memory and the notebook marks what is wrong or missing. (`pause_after`, asked after the visuals)
 
-Restrict a question to one source with `only` when asking what that author argues, or when one long source would drown out the rest. In a reused notebook that holds more than this topic, give every question `only` the topic's sources: a question with no `only` reads the whole notebook and strays off topic.
+**Then keep asking.** The loop is a starting point, not a cap. Follow-ups come from the "More questions" list in the prompt library, from gaps and surprises in the answers so far, and from what the learner is curious about. Each one is a new entry in the manifest's `questions`, run with `nlm_ask.py --only <id>`. Each costs about 2% of a five-hour window, so the plan's yes can include a number of follow-ups (say 10, about 20%); ask within it, and say when it is used up.
+
+**Word every question by the phrasing rules** in `references/prompt-library.md`: complete on its own, one thing asked, the sources' own terms, neutral wording, no request for brevity. The script adds the line asking for quotes first and `[not in sources]` marks.
+
+Restrict a question to some sources with `only` when it asks what one author argues or names a source, chapter or edition; when one long source would drown out the rest; or when each side of a disagreement must be heard. In a reused notebook that holds more than this topic, give every question `only` the topic's sources: a question with no `only` reads the whole notebook and strays off topic.
 
 ### 5. Pack and visuals
 
@@ -117,7 +129,7 @@ Show the user, per topic: the notebook (new or reused), the sources, the questio
 Each script is safe to rerun: it skips whatever the manifest already records.
 - `python3 -I scripts/nlm_build.py --manifest <path>` creates the notebook, adds or copies the sources, gives the ones it added a clean title, sets the plain-language chat persona, and waits until every source is `ready`. A web page that fails to load is reported; replace it with another link or a pasted `text_file`.
 - `python3 -I scripts/nlm_ask.py --manifest <path>` asks the questions in one conversation and saves each answer as a note and in `answers/`. It stops (exit 4) after a `pause_after` question. Show the learner that answer, get their own attempt, put it in the next question in place of `{attempt}`, and rerun. If they'd rather skip trying, rerun with `--no-pause` and say what they give up.
-- **Audit.** Read the flags. No citations: re-ask, restricted to the relevant source. One source dominating a comparison: re-ask restricted to the missing one. "Not in sources" gaps: tell the user, and offer to add a source. Anything decision-critical that changes over time goes on a verify list.
+- **Audit.** Read the flags. No citations: re-ask, restricted to the relevant source. One source dominating a comparison: re-ask restricted to the missing one. "Not in sources" gaps: tell the user and offer to add a source; don't ask the same question again in other words, because repeated asking is when NotebookLM starts inventing. A citation is not proof: for anything the learner will rely on, open the cited passage, and for "the author argues" claims, check who actually holds the view. To doubt an answer, ask for the passage that supports it, never "are you sure?". Anything decision-critical that changes over time goes on a verify list.
 - `python3 -I scripts/nlm_artifacts.py --manifest <path>` generates the pack and downloads it to `artifacts/`. Then **look at every visual**: open the preview images it lists, and read the mind-map outline and table it writes as markdown. For each report, check that its diagrams show how the ideas relate; the script flags a report with none. Judge them against the rubric in `references/studio-playbook.md` and fix what is crowded as described there. Tell the user plainly which ones came out clean and which didn't.
 
 ### 11. Teach-back, quiz, review, index
@@ -144,12 +156,13 @@ Your own messages follow the same plain-language rules as the notebook (they are
 
 ## When to stop
 
-Stop asking when the learner can explain the topic and handle a new case. Keep to about 8 questions and one pack per topic unless asked for more. Build a few topics at a time, and finish the teach-back for one before generating the next. If notebooks keep multiplying while teach-backs stay unwritten, say so kindly and point back to the one in progress.
+Keep asking while the answers still teach something new and the budget allows; stop when the learner can explain the topic and handle a new case. One pack per topic unless asked for more. Build a few topics at a time, and finish the teach-back for one before generating the next. If notebooks keep multiplying while teach-backs stay unwritten, say so kindly and point back to the one in progress.
 
 ## Reference files (read when needed)
 
 - `references/plan-template.md`: folder layout, `topic-map.md`, the `manifest.json` schema with every source type, `teach-back.md` and the index.
-- `references/prompt-library.md`: the learning-loop question templates, the plain-language rules, and extras for decisions.
+- `references/source-finder.md`: the brief for the cheaper model that searches for sources, and how to check what it returns.
+- `references/prompt-library.md`: the phrasing rules, the loop's question templates, more questions to keep asking, and the plain-language rules.
 - `references/studio-playbook.md`: what each Studio output is for, the packs and their cost, how to write a focus, the crowding rubric and the fixes.
 - `references/cli-cheatsheet.md`: commands, flags, JSON fields, costs and gotchas. Read before running any `notebooklm` command yourself.
 - `references/technique-library.md`: why each learning technique works and how strong the evidence is.

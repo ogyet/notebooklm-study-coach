@@ -1,7 +1,7 @@
 {
   "name": "notebooklm-study-coach",
   "version": "0.1.0",
-  "description": "Turn your own books, PDFs, links and videos into focused NotebookLM notebooks, one topic each, then learn them with a cited loop: problem first, first principles, explain-like-I'm-five, teach-back. Uncluttered Studio outputs within a usage budget.",
+  "description": "Turn your own books, PDFs, links and videos into focused NotebookLM notebooks, one topic each, then learn them with a cited question loop: problem first, first principles, comparing cases, teach-back. Uncluttered Studio outputs within a usage budget.",
   "author": { "name": "ogyet" },
   "homepage": "https://github.com/ogyet/notebooklm-study-coach",
   "license": "MIT",
